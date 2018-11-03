@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+}
+
+.header-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.greeting {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.content-container {
+    display: flex;
+}
+
+.product-features {
+    display: flex;
+}
+
+.meet-evelyn {
+    display: flex;
+}
+
+.pricing {
+    display: flex;
+}
+
+footer {
+    display: flex;
+}
