@@ -3,13 +3,30 @@
 }
 
 header {
+    background: rgb(30,140,98);
+background: -moz-linear-gradient(45deg, rgba(30,140,98,1) 0%, rgba(30,87,137,1) 100%);
+background: -webkit-linear-gradient(45deg, rgba(30,140,98,1) 0%,rgba(30,87,137,1) 100%);
+background: linear-gradient(45deg, rgba(30,140,98,1) 0%,rgba(30,87,137,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e8c62', endColorstr='#1e5789',GradientType=1 );
+
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+}
+
+main {
+    width: 77%;
+    margin: auto;
 }
 
 .header-container {
-    display: flex;
+        display: flex;
     flex-direction: column;
-    width: 100%;
+    color: white;
+    height: 300px;
+    width: 80%
 }
 
 .menu {
@@ -18,31 +35,111 @@ header {
 
 }
 
+.links {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 15%;
+    display: flex;
+    justify-content: center;
+}
+
+.login, .signup {
+    text-transform: uppercase;
+    width: 49%;
+    display: flex;
+    align-items: center;
+    font-size: 11px;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.signup {
+    background-color: white;
+    color: #1e5988;
+}
+
 .greeting {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.main-container {
-    display: flex;
-    flex-wrap: wrap;
+.greeting > h1 {
+    margin: 2%;
 }
 
-.content-container {
+.description {
+    width: 400px;
+    text-align: center;
+    margin: 2%;
+}
+
+.start {
+    background-color: aquamarine;
     display: flex;
+    height: 40px;
+    align-items: center;
+    width: 25%;
+    justify-content: center;
+    margin: 2%;
+    text-transform: uppercase;
 }
 
 .product-features {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.product-features > h1 {
+    text-align: center;
+    width: 100%;
+}
+
+.product-features > p {
+    text-align: center;
+}
+
+.feature {
+    width: 20%;
+    box-shadow: 0 0 15px;
+    height: 200px;
+    font-size: 15px;
+    position: relative;
+}
+
+.feature > p, .feature > h1 {
+    margin: 0;
+    position: relative;
+}
+
+.square {
+    width: 20px;
+    height: 20px;
+    background-color: #3db3cf;
+    position: absolute;
+    top: 30px;
 }
 
 .meet-evelyn {
     display: flex;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%
+}
+
+.discover {
+    width: 50%;
 }
 
 .pricing {
     display: flex;
+    justify-content: space-around;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 footer {
